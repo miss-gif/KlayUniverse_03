@@ -41,27 +41,3 @@ new Swiper(".TEAM .swiper", {
     },
   },
 });
-
-/* section COMMUNITY 슬라이드 컨트롤 */
-new Swiper(".COMMUNITY .swiper", {
-  direction: "horizontal", // 수평 슬라이드
-  // autoplay: {
-  //   // 자동 재생 여부
-  //   // delay: 5000, // 5초마다 슬라이드 바뀜
-  // },
-  loop: true, // 반복 재생 여부
-  spaceBetween: 20, // 슬라이드 사이 여백
-  slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수
-  slidesPerGroup: 1, // 한 번에 슬라이드 할 개수(전체 개수로 나뉘어야 함)
-  // mousewheel: true, // 마우스 휠 기능
-  breakpoints: {
-    // when window width is >= 768px
-    768: {
-      slidesPerView: 3,
-    },
-    // when window width is >= 1024px
-    1024: {
-      slidesPerView: 4,
-    },
-  },
-});

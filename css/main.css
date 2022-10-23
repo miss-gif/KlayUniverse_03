@@ -316,8 +316,14 @@ main .PARTNERS .inner .row ul li div {
   border-radius: 16px;
   background-color: #161616;
 }
-main .COMMUNITY {
-  display: none;
+main .COMMUNITY .row {
+  padding: 0;
+}
+main .COMMUNITY .row p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 30px;
 }
 
 /* main 종료 *//*# sourceMappingURL=main.css.map */
