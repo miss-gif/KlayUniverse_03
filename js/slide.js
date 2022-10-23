@@ -12,10 +12,10 @@ const swiper = new Swiper(".UNIVERSE .swiper", {
   slidesPerGroup: 1, // 한 번에 슬라이드 할 개수(전체 개수로 나뉘어야 함)
   breakpoints: {
     1275: {
-      slidesPerView: 4.5,
+      slidesPerView: 4.7,
     },
     940: {
-      slidesPerView: 3.5,
+      slidesPerView: 3.7,
     },
   },
 });

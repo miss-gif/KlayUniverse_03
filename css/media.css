@@ -32,6 +32,35 @@
   main .UNIVERSE .swiper .swiper-wrapper .swiper-slide {
     margin-left: 0;
   }
+  main .ROADMAP .row {
+    width: 100%;
+  }
+  main .ROADMAP .row article {
+    flex-direction: column;
+  }
+  main .ROADMAP .row article .tabMenu {
+    display: flex;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+  }
+  main .ROADMAP .row article .tabMenu li {
+    width: 80px;
+  }
+  main .ROADMAP .row article .tabMenu .active:before {
+    bottom: 0;
+    height: 4px;
+    top: auto;
+    width: 100%;
+    transform: translate(0%, 34%);
+  }
+  main .ROADMAP .row article .tabList {
+    flex-direction: column;
+  }
+  main .ROADMAP .row article .tabList img {
+    margin-left: 0;
+    margin: 20px 0;
+    width: 150px;
+  }
   main .TEAM .swiper {
     width: 92%;
   }

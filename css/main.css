@@ -47,10 +47,6 @@ a.btnStyle:hover {
   display: none;
 }
 
-body {
-  height: 3000px;
-}
-
 /* header 시작 */
 header {
   position: fixed;
@@ -210,30 +206,24 @@ main .UNIVERSE .swiper .swiper-wrapper .swiper-slide p span {
 main .UNIVERSE a {
   margin-top: 60px;
 }
-main .ROADMAP > .row {
-  width: 100%;
-  max-width: 1180px;
-}
-main .ROADMAP > .row article {
-  width: 100%;
-  max-width: 1180px;
+main .ROADMAP .row article {
   display: flex;
   border-radius: 16px;
   background-color: #000;
 }
-main .ROADMAP > .row article .tabMenu {
+main .ROADMAP .row article .tabMenu {
+  width: 144px;
   border-radius: 16px 0 0 16px;
   background-color: #333;
 }
-main .ROADMAP > .row article .tabMenu > li {
+main .ROADMAP .row article .tabMenu li {
   position: relative;
-  width: 144px;
   height: 39px;
   font-size: 32px;
   padding: 24px 0;
   text-align: center;
 }
-main .ROADMAP > .row article .tabMenu .active:before {
+main .ROADMAP .row article .tabMenu .active:before {
   position: absolute;
   content: "";
   width: 4px;
@@ -244,32 +234,30 @@ main .ROADMAP > .row article .tabMenu .active:before {
   transform: translate(-50%, -50%);
   border-radius: 5px;
 }
-main .ROADMAP > .row article .tabList {
-  position: relative;
-  width: 100%;
-  min-height: 500px;
+main .ROADMAP .row article .tabList {
+  max-width: 920px;
+  height: 404px;
   padding: 48px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
-main .ROADMAP > .row article .tabList li {
-  font-size: 16px;
+main .ROADMAP .row article .tabList div li {
   line-height: 2;
 }
-main .ROADMAP > .row article .tabList li::before {
+main .ROADMAP .row article .tabList div li::before {
   content: "· ";
 }
-main .ROADMAP > .row article .tabList li:hover {
+main .ROADMAP .row article .tabList div li:hover {
   color: #5cffc0;
   cursor: pointer;
 }
-main .ROADMAP > .row article .tabList img {
-  width: 300px;
+main .ROADMAP .row article .tabList img {
+  margin-left: 120px;
+  display: block;
+  width: 200px;
   -o-object-fit: contain;
      object-fit: contain;
-}
-main .ROADMAP {
-  display: none;
 }
 main .TEAM > p {
   font-size: 20px;
@@ -304,6 +292,9 @@ main .TEAM .swiper ul li .title_area .job {
   padding: 10px;
   font-size: 16px;
   line-height: 16px;
+}
+main .TEAM {
+  display: none;
 }
 main .PARTNERS .inner p {
   text-align: center;
@@ -351,6 +342,9 @@ main > section.COMMUNITY > .swiper > ul > li > img {
 }
 main > section.COMMUNITY > button {
   margin-top: 3.125rem;
+}
+main .COMMUNITY {
+  display: none;
 }
 
 /* main 종료 *//*# sourceMappingURL=main.css.map */

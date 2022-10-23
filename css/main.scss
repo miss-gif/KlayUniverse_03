@@ -47,20 +47,6 @@ a.btnStyle {
   display: none;
 }
 
-// 작업중 임시코드
-
-body {
-  height: 3000px;
-}
-
-.main_VIDEO,
-.PROMO,
-.UNIVERSE {
-  // display: none;
-}
-
-// 작업중 임시코드
-
 /* header 시작 */
 
 header {
@@ -257,27 +243,22 @@ main {
   /* section ROADMAP 시작 */
 
   .ROADMAP {
-    > .row {
-      width: 100%;
-      max-width: 1180px;
-
+    .row {
       h2 {
       }
 
       article {
-        width: 100%;
-        max-width: 1180px;
         display: flex;
         border-radius: 16px;
         background-color: #000;
 
         .tabMenu {
+          width: 144px;
           border-radius: 16px 0 0 16px;
           background-color: #333;
 
-          > li {
+          li {
             position: relative;
-            width: 144px;
             height: 39px;
             font-size: 32px;
             padding: 24px 0;
@@ -300,38 +281,37 @@ main {
         }
 
         .tabList {
-          position: relative;
-          width: 100%;
-          min-height: 500px;
+          max-width: 920px;
+          height: 404px;
           padding: 48px;
           display: flex;
           justify-content: space-between;
+          align-items: flex-start;
 
-          li {
-            font-size: 16px;
-            line-height: 2;
+          div {
+            li {
+              line-height: 2;
 
-            &::before {
-              content: "· ";
-            }
+              &::before {
+                content: "· ";
+              }
 
-            &:hover {
-              color: #5cffc0;
-              cursor: pointer;
+              &:hover {
+                color: #5cffc0;
+                cursor: pointer;
+              }
             }
           }
 
           img {
-            width: 300px;
+            margin-left: 120px;
+            display: block;
+            width: 200px;
             object-fit: contain;
           }
         }
       }
     }
-  }
-
-  .ROADMAP {
-    display: none;
   }
 
   /* section ROADMAP 종료 */
@@ -384,6 +364,10 @@ main {
     }
   }
 
+  .TEAM {
+    display: none;
+  }
+
   /* section TEAM 종료 */
 
   /* section PARTNERS 시작 */
@@ -423,9 +407,6 @@ main {
 
   /* section PARTNERS 종료 */
 
-
-
-
   /* section COMMUNITY 시작 */
 
   > section.COMMUNITY {
@@ -461,14 +442,11 @@ main {
     }
   }
 
-
-
-
+  .COMMUNITY {
+    display: none;
+  }
 
   /* section COMMUNITY 종료 */
-
-
-  
 }
 
 /* main 종료 */
