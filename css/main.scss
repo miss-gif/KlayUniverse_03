@@ -370,27 +370,29 @@ main {
 
   .PARTNERS {
     .inner {
-      p {
-        text-align: center;
-        font-size: 20px;
-        line-height: 2;
-      }
-
-      ul {
-        // width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 2rem;
-
-        li {
-          // width: 16.6666%;
-          box-sizing: border-box;
-          padding: 8px;
-
-          div {
-            // min-height: 112px;
-            border-radius: 16px;
-            background-color: #161616;
+      width: 100%;
+      .row {
+        p {
+          text-align: center;
+          font-size: 20px;
+          line-height: 2;
+        }
+  
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 2rem;
+  
+          li {
+            width: 16.6666%;
+            box-sizing: border-box;
+            padding: 8px;
+  
+            div {
+              min-height: 112px;
+              border-radius: 16px;
+              background-color: #161616;
+            }
           }
         }
       }
@@ -401,38 +403,38 @@ main {
 
   /* section COMMUNITY 시작 */
 
-  > section.COMMUNITY {
-    box-sizing: border-box;
-    padding: 10px;
+  // > section.COMMUNITY {
+  //   box-sizing: border-box;
+  //   padding: 10px;
 
-    > p {
-      font-size: 1.25rem;
-      line-height: 2.5rem;
-      margin-bottom: 1.875rem;
-    }
+  //   > p {
+  //     font-size: 1.25rem;
+  //     line-height: 2.5rem;
+  //     margin-bottom: 1.875rem;
+  //   }
 
-    > .swiper {
-      width: 100%;
+  //   > .swiper {
+  //     width: 100%;
 
-      > ul {
-        display: flex;
+  //     > ul {
+  //       display: flex;
 
-        > li {
-          padding: 0.625rem;
-          border-radius: 0.625rem;
-          background-color: #000;
+  //       > li {
+  //         padding: 0.625rem;
+  //         border-radius: 0.625rem;
+  //         background-color: #000;
 
-          > img {
-            width: 100%;
-          }
-        }
-      }
-    }
+  //         > img {
+  //           width: 100%;
+  //         }
+  //       }
+  //     }
+  //   }
 
-    > button {
-      margin-top: 3.125rem;
-    }
-  }
+  //   > button {
+  //     margin-top: 3.125rem;
+  //   }
+  // }
 
   .COMMUNITY {
     display: none;
