@@ -10,7 +10,7 @@ a {
   color: #fff;
 }
 
-a.btnStyle {
+.btnStyle {
   width: 280px;
   height: 60px;
   font-size: 20px;
@@ -66,8 +66,7 @@ header {
 
       h1 {
         a {
-          img {
-          }
+          img {}
         }
       }
 
@@ -137,7 +136,7 @@ main {
       z-index: -2;
     }
 
-    > p {
+    >p {
       font-size: 72px;
       font-weight: 600;
       line-height: 1.5;
@@ -149,7 +148,7 @@ main {
       }
     }
 
-    > .mouseScroll {
+    >.mouseScroll {
       position: absolute;
       bottom: 30px;
       width: 10px;
@@ -157,7 +156,7 @@ main {
       align-items: center;
       flex-direction: column;
 
-      > img {
+      >img {
         margin: 4px;
         animation-name: move; // 애니메이션 명
         animation-duration: 0.4s; // 완료까지 걸리는 시간 설정
@@ -172,7 +171,7 @@ main {
         }
       }
 
-      > p {
+      >p {
         margin-top: 6px;
         color: rgba(#5cffc0, 0.3);
       }
@@ -194,8 +193,7 @@ main {
 
   /* section UNIVERSE 시작 */
   .UNIVERSE {
-    h2 {
-    }
+    h2 {}
 
     p {
       text-align: center;
@@ -246,8 +244,8 @@ main {
     .row {
       width: 100%;
       max-width: 1160px;
-      h2 {
-      }
+
+      h2 {}
 
       article {
         display: flex;
@@ -320,7 +318,7 @@ main {
 
   /* section TEAM 시작 */
   .TEAM {
-    > p {
+    >p {
       font-size: 20px;
       line-height: 36px;
       font-weight: 400;
@@ -407,9 +405,11 @@ main {
 
   /* section COMMUNITY 시작 */
 
-  .COMMUNITY {
+  .GALLERY {
+    background-color: #156;
     .row {
       padding: 0;
+      background-color: #222;
 
       p {
         text-align: center;
@@ -417,6 +417,32 @@ main {
         line-height: 1.8;
         margin-bottom: 30px;
       }
+
+      .swiper {
+        // width: 100%;        
+        max-width: 1360px;
+        // background-color: rgba(255, 255, 255, 0.129);
+
+        .swiper-wrapper {
+          .swiper-slide {
+            box-sizing: border-box;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #000;
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .swiper-pagination {
+          display: none;
+        }
+      }
+    }
+
+    a {
+      margin-top: 70px;
     }
   }
 

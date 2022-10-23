@@ -11,7 +11,7 @@ a {
   color: #fff;
 }
 
-a.btnStyle {
+.btnStyle {
   width: 280px;
   height: 60px;
   font-size: 20px;
@@ -23,7 +23,7 @@ a.btnStyle {
   line-height: 60px;
   box-sizing: border-box;
 }
-a.btnStyle:hover {
+.btnStyle:hover {
   background: linear-gradient(to right, #31f8ab, #39c2ee);
   border: 0;
   color: #101010;
@@ -321,14 +321,36 @@ main .PARTNERS .inner .row ul li div {
   border-radius: 16px;
   background-color: #161616;
 }
-main .COMMUNITY .row {
-  padding: 0;
+main .GALLERY {
+  background-color: #156;
 }
-main .COMMUNITY .row p {
+main .GALLERY .row {
+  padding: 0;
+  background-color: #222;
+}
+main .GALLERY .row p {
   text-align: center;
   font-size: 20px;
   line-height: 1.8;
   margin-bottom: 30px;
+}
+main .GALLERY .row .swiper {
+  max-width: 1360px;
+}
+main .GALLERY .row .swiper .swiper-wrapper .swiper-slide {
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #000;
+}
+main .GALLERY .row .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+main .GALLERY .row .swiper .swiper-pagination {
+  display: none;
+}
+main .GALLERY a {
+  margin-top: 70px;
 }
 
 /* main 종료 *//*# sourceMappingURL=main.css.map */
