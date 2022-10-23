@@ -2,11 +2,31 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   background-color: #010101df;
+  background-color: orange;
   color: #fff;
 }
 
 a {
   color: #fff;
+}
+
+a.btnStyle {
+  width: 280px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  transition: 0.3s;
+  text-align: center;
+  line-height: 60px;
+  box-sizing: border-box;
+
+  &:hover {
+    background: linear-gradient(to right, #31f8ab, #39c2ee);
+    border: 0;
+    color: #101010;
+  }
 }
 
 .inner {
@@ -30,7 +50,7 @@ body {
 
 // 작업중 임시코드
 
-/* header 헤드 영역 */
+/* header 시작 */
 
 header {
   position: fixed;
@@ -74,7 +94,9 @@ header {
   }
 }
 
-/* main 메인 영역 */
+/* header 종료 */
+
+/* main 시작 */
 
 main {
   section {
@@ -85,9 +107,16 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    h2 {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 2;
+    }
   }
 
-  section.main_VIDEO {
+  /* section main_VIDEO 시작 */
+  .main_VIDEO {
     &::after {
       position: absolute;
       top: 0;
@@ -121,25 +150,6 @@ main {
       }
     }
 
-    a {
-      width: 280px;
-      height: 60px;
-      font-size: 20px;
-      border-radius: 30px;
-      background-color: transparent;
-      border: 1px solid #fff;
-      transition: 0.3s;
-      text-align: center;
-      line-height: 60px;
-      box-sizing: border-box;
-
-      &:hover {
-        background: linear-gradient(to right, #31f8ab, #39c2ee);
-        border: 0;
-        color: #101010;
-      }
-    }
-
     >.mouseScroll {
       position: absolute;
       bottom: 30px;
@@ -170,16 +180,64 @@ main {
     }
   }
 
-  /* main_VIDEO */
+  /* section main_VIDEO 종료 */
 
-  section.PROMO {  
+  /* section PROMO 시작 */
+  .PROMO {
     h2 {
-      font-size: 48px;
-      font-weight: 600;
-      line-height: 2;
       margin-bottom: 20px;
     }
   }
 
-  /* PROMO */
+  /* section PROMO 종료 */
+
+  /* section UNIVERSE 시작 */
+  .UNIVERSE {
+    h2 {}
+
+    p {
+      text-align: center;
+      font-size: 20px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    .swiper {
+      width: 100%;
+
+      .swiper-wrapper {
+
+        .swiper-slide {
+          box-sizing: border-box;
+          padding: 15px 15px 0 15px;
+          border-radius: 16px;
+          background-color: #000;
+          margin-left: 1.5px;
+
+          img {
+            width: 100%;
+            border-radius: 12px;
+          }
+
+          p {
+            font-size: 16px;
+            padding: 5px;
+            margin-bottom: 0;
+
+            span {
+              color: #5cffc0;
+            }
+          }
+        }
+      }
+    }
+
+    a {
+      margin-top: 60px;
+    }
+  }
+
+  /* section UNIVERSE 종료 */
 }
+
+/* main 종료 */

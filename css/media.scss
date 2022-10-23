@@ -33,7 +33,7 @@
   }
 
   main {
-    section.main_VIDEO {
+    .main_VIDEO {
       >p {
         font-size: 30px;
       }
@@ -54,9 +54,20 @@
       }
     }
 
-    section.PROMO {
+    .PROMO {
       video {
         width: 95%;
+      }
+    }
+
+    .UNIVERSE {
+      .swiper{
+        width: 95%;
+        .swiper-wrapper {
+          .swiper-slide {
+            margin-left: 0;
+          }
+        }
       }
     }
   }

@@ -10,20 +10,26 @@
   header .inner nav {
     display: none;
   }
-  main section.main_VIDEO > p {
+  main .main_VIDEO > p {
     font-size: 30px;
   }
-  main section.main_VIDEO a {
+  main .main_VIDEO a {
     width: 208px;
     height: 43px;
     font-size: 15px;
     line-height: 43px;
     transition: 0s;
   }
-  main section.main_VIDEO > .mouseScroll > p {
+  main .main_VIDEO > .mouseScroll > p {
     font-size: 12px;
   }
-  main section.PROMO video {
+  main .PROMO video {
     width: 95%;
+  }
+  main .UNIVERSE .swiper {
+    width: 95%;
+  }
+  main .UNIVERSE .swiper .swiper-wrapper .swiper-slide {
+    margin-left: 0;
   }
 }/*# sourceMappingURL=media.css.map */
