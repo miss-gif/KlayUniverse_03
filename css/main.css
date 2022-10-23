@@ -42,8 +42,18 @@ a.btnStyle:hover {
   color: #5cffc0;
 }
 
+.hide {
+  display: none;
+}
+
 body {
   height: 3000px;
+}
+
+.main_VIDEO,
+.PROMO,
+.UNIVERSE {
+  display: none;
 }
 
 /* header 시작 */
@@ -82,6 +92,7 @@ main {
   /* section PROMO 종료 */
   /* section UNIVERSE 시작 */
   /* section UNIVERSE 종료 */
+  /* section ROADMAP 시작 */
 }
 main section {
   position: relative;
@@ -196,5 +207,66 @@ main .UNIVERSE .swiper .swiper-wrapper .swiper-slide p span {
 main .UNIVERSE a {
   margin-top: 60px;
 }
+main .ROADMAP article {
+  width: 100%;
+  max-width: 1180px;
+  display: flex;
+  border-radius: 16px;
+  background-color: #000;
+}
+main .ROADMAP article > ul {
+  padding: 24px 0;
+  border-radius: 16px 0 0 16px;
+  background-color: #333;
+}
+main .ROADMAP article > ul li {
+  width: 100%;
+  width: 144px;
+  position: relative;
+  margin-bottom: 1.875rem;
+  border: 0;
+  font-size: 2em;
+}
+main .ROADMAP article > ul li:before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 50%;
+  background-color: #31f8ab;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+main .ROADMAP .list {
+  position: relative;
+  width: calc(100% - 8.75rem);
+  min-height: 500px;
+  padding: 2rem;
+}
+main .ROADMAP .list:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #156;
+}
+main .ROADMAP .list ul {
+  width: 50%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+main .ROADMAP .list ul li {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 2;
+  list-style: disc;
+}
+main .ROADMAP .list img {
+  width: 30%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
+/* section ROADMAP 종료 */
 /* main 종료 *//*# sourceMappingURL=main.css.map */

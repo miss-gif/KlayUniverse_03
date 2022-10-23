@@ -42,10 +42,20 @@ a.btnStyle {
   color: #5cffc0;
 }
 
+.hide {
+  display: none;
+}
+
 // 작업중 임시코드
 
 body {
   height: 3000px;
+}
+
+.main_VIDEO,
+.PROMO,
+.UNIVERSE {
+  display: none;
 }
 
 // 작업중 임시코드
@@ -206,7 +216,6 @@ main {
       width: 100%;
 
       .swiper-wrapper {
-
         .swiper-slide {
           box-sizing: border-box;
           padding: 15px 15px 0 15px;
@@ -238,6 +247,86 @@ main {
   }
 
   /* section UNIVERSE 종료 */
+
+  /* section ROADMAP 시작 */
+  .ROADMAP {
+    
+    h2 {}
+
+    article {
+      width: 100%;
+      max-width: 1180px;
+      display: flex;
+      border-radius: 16px;
+      background-color: #000;
+
+      >ul {
+        // width: 144px;
+        padding: 24px 0;
+        border-radius: 16px 0 0 16px;
+        background-color: #333;
+        
+        li {
+          width: 100%;
+          width: 144px;
+          position: relative;
+          margin-bottom: 1.875rem;
+          border: 0;
+          font-size: 2em;
+          &:before {
+            position: absolute;
+            content: "";
+            width: 4px;
+            height: 50%;
+            background-color: #31f8ab;
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+          }
+
+          a {}
+        }
+      }
+    }
+
+    .list {
+      position: relative;
+      width: calc(100% - 8.75rem);
+      min-height: 500px;
+      padding: 2rem;
+
+      // 코드 작동 안하고 있음
+      &:first-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: #156;
+      }
+
+      ul {
+        width: 50%;
+        padding: 1rem;
+        box-sizing: border-box;
+
+        li {
+          text-align: left;
+          font-size: 1rem;
+          line-height: 2;
+          list-style: disc;
+        }
+      }
+
+      img {
+        width: 30%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
 }
+
+/* section ROADMAP 종료 */
+
 
 /* main 종료 */
