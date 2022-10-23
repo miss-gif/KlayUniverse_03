@@ -23,4 +23,7 @@
   main section.main_VIDEO > .mouseScroll > p {
     font-size: 12px;
   }
+  main section.PROMO video {
+    width: 95%;
+  }
 }/*# sourceMappingURL=media.css.map */

@@ -57,6 +57,7 @@ header .inner .header nav ul li a:hover {
 /* main 메인 영역 */
 main {
   /* main_VIDEO */
+  /* PROMO */
 }
 main section {
   position: relative;
@@ -148,4 +149,10 @@ main section.main_VIDEO > .mouseScroll > img {
 main section.main_VIDEO > .mouseScroll > p {
   margin-top: 6px;
   color: rgba(92, 255, 192, 0.3);
+}
+main section.PROMO h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 2;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
