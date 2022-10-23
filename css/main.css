@@ -293,9 +293,6 @@ main .TEAM .swiper ul li .title_area .job {
   font-size: 16px;
   line-height: 16px;
 }
-main .TEAM {
-  display: none;
-}
 main .PARTNERS .inner p {
   text-align: center;
   font-size: 20px;
@@ -313,9 +310,6 @@ main .PARTNERS .inner ul li {
 main .PARTNERS .inner ul li div {
   border-radius: 16px;
   background-color: #161616;
-}
-main .PARTNERS {
-  display: none;
 }
 main > section.COMMUNITY {
   box-sizing: border-box;
