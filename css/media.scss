@@ -1,0 +1,34 @@
+@media (max-width: 940px) {
+  header {
+    padding: 0;
+    .inner {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      h1 {
+  
+        a {
+          img {
+          }
+        }
+      }
+  
+      nav {
+        display: none;
+  
+        h2 {}
+  
+        ul {
+  
+          li {
+            a {
+              &:hover {
+              }
+            }
+          }
+        }
+  
+      }
+    }
+  }
+}

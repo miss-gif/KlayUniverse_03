@@ -1,0 +1,13 @@
+@media (max-width: 940px) {
+  header {
+    padding: 0;
+  }
+  header .inner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  header .inner nav {
+    display: none;
+  }
+}/*# sourceMappingURL=media.css.map */
