@@ -93,6 +93,8 @@ main {
   /* section TEAM 종료 */
   /* section PARTNERS 시작 */
   /* section PARTNERS 종료 */
+  /* section COMMUNITY 시작 */
+  /* section COMMUNITY 종료 */
 }
 main section {
   position: relative;
@@ -323,6 +325,32 @@ main .PARTNERS .inner ul li div {
 }
 main .PARTNERS {
   display: none;
+}
+main > section.COMMUNITY {
+  box-sizing: border-box;
+  padding: 10px;
+}
+main > section.COMMUNITY > p {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 1.875rem;
+}
+main > section.COMMUNITY > .swiper {
+  width: 100%;
+}
+main > section.COMMUNITY > .swiper > ul {
+  display: flex;
+}
+main > section.COMMUNITY > .swiper > ul > li {
+  padding: 0.625rem;
+  border-radius: 0.625rem;
+  background-color: #000;
+}
+main > section.COMMUNITY > .swiper > ul > li > img {
+  width: 100%;
+}
+main > section.COMMUNITY > button {
+  margin-top: 3.125rem;
 }
 
 /* main 종료 *//*# sourceMappingURL=main.css.map */
