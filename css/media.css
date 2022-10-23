@@ -10,4 +10,17 @@
   header .inner nav {
     display: none;
   }
+  main section.main_VIDEO > p {
+    font-size: 30px;
+  }
+  main section.main_VIDEO a {
+    width: 208px;
+    height: 43px;
+    font-size: 15px;
+    line-height: 43px;
+    transition: 0s;
+  }
+  main section.main_VIDEO > .mouseScroll > p {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=media.css.map */

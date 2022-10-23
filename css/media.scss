@@ -1,33 +1,56 @@
 @media (max-width: 940px) {
   header {
     padding: 0;
+
     .inner {
       width: 100%;
       display: flex;
       justify-content: center;
+
       h1 {
-  
+
         a {
-          img {
-          }
+          img {}
         }
       }
-  
+
       nav {
         display: none;
-  
+
         h2 {}
-  
+
         ul {
-  
+
           li {
             a {
-              &:hover {
-              }
+              &:hover {}
             }
           }
         }
-  
+
+      }
+    }
+  }
+
+  main {
+    section.main_VIDEO {
+      >p {
+        font-size: 30px;
+      }
+
+      a {
+        width: 208px;
+        height: 43px;
+        font-size: 15px;
+        line-height: 43px;
+        transition: 0s;
+      }
+
+      >.mouseScroll {
+        >img {}
+        >p {
+          font-size: 12px;
+        }
       }
     }
   }
