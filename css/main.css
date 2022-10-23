@@ -206,6 +206,10 @@ main .UNIVERSE .swiper .swiper-wrapper .swiper-slide p span {
 main .UNIVERSE a {
   margin-top: 60px;
 }
+main .ROADMAP .row {
+  width: 100%;
+  max-width: 1160px;
+}
 main .ROADMAP .row article {
   display: flex;
   border-radius: 16px;
@@ -295,6 +299,7 @@ main .TEAM .swiper ul li .title_area .job {
 }
 main .PARTNERS .inner {
   width: 100%;
+  max-width: 1360px;
 }
 main .PARTNERS .inner .row p {
   text-align: center;
