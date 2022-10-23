@@ -35,7 +35,8 @@ a.btnStyle {
 }
 
 .row {
-  padding: 0 30px;
+  box-sizing: border-box;
+  padding: 0 32px;
 }
 
 .active {
@@ -55,7 +56,7 @@ body {
 .main_VIDEO,
 .PROMO,
 .UNIVERSE {
-  display: none;
+  // display: none;
 }
 
 // 작업중 임시코드
@@ -79,7 +80,8 @@ header {
 
       h1 {
         a {
-          img {}
+          img {
+          }
         }
       }
 
@@ -119,6 +121,7 @@ main {
     flex-direction: column;
 
     h2 {
+      text-align: center;
       font-size: 48px;
       font-weight: 600;
       line-height: 2;
@@ -148,7 +151,7 @@ main {
       z-index: -2;
     }
 
-    >p {
+    > p {
       font-size: 72px;
       font-weight: 600;
       line-height: 1.5;
@@ -160,7 +163,7 @@ main {
       }
     }
 
-    >.mouseScroll {
+    > .mouseScroll {
       position: absolute;
       bottom: 30px;
       width: 10px;
@@ -168,7 +171,7 @@ main {
       align-items: center;
       flex-direction: column;
 
-      >img {
+      > img {
         margin: 4px;
         animation-name: move; // 애니메이션 명
         animation-duration: 0.4s; // 완료까지 걸리는 시간 설정
@@ -183,7 +186,7 @@ main {
         }
       }
 
-      >p {
+      > p {
         margin-top: 6px;
         color: rgba(#5cffc0, 0.3);
       }
@@ -194,8 +197,10 @@ main {
 
   /* section PROMO 시작 */
   .PROMO {
-    h2 {
-      margin-bottom: 20px;
+    .row {
+      h2 {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -203,7 +208,8 @@ main {
 
   /* section UNIVERSE 시작 */
   .UNIVERSE {
-    h2 {}
+    h2 {
+    }
 
     p {
       text-align: center;
@@ -249,84 +255,173 @@ main {
   /* section UNIVERSE 종료 */
 
   /* section ROADMAP 시작 */
-  .ROADMAP {
-    
-    h2 {}
 
-    article {
+  .ROADMAP {
+    > .row {
       width: 100%;
       max-width: 1180px;
-      display: flex;
-      border-radius: 16px;
-      background-color: #000;
 
-      >ul {
-        // width: 144px;
-        padding: 24px 0;
-        border-radius: 16px 0 0 16px;
-        background-color: #333;
-        
-        li {
-          width: 100%;
-          width: 144px;
-          position: relative;
-          margin-bottom: 1.875rem;
-          border: 0;
-          font-size: 2em;
-          &:before {
-            position: absolute;
-            content: "";
-            width: 4px;
-            height: 50%;
-            background-color: #31f8ab;
-            top: 50%;
-            left: 0;
-            transform: translate(-50%, -50%);
-            border-radius: 10px;
+      h2 {
+      }
+
+      article {
+        width: 100%;
+        max-width: 1180px;
+        display: flex;
+        border-radius: 16px;
+        background-color: #000;
+
+        .tabMenu {
+          border-radius: 16px 0 0 16px;
+          background-color: #333;
+
+          > li {
+            position: relative;
+            width: 144px;
+            height: 39px;
+            font-size: 32px;
+            padding: 24px 0;
+            text-align: center;
           }
 
-          a {}
+          .active {
+            &:before {
+              position: absolute;
+              content: "";
+              width: 4px;
+              height: 30px;
+              background-color: #5cffc0;
+              top: 48%;
+              left: 0;
+              transform: translate(-50%, -50%);
+              border-radius: 5px;
+            }
+          }
         }
-      }
-    }
 
-    .list {
-      position: relative;
-      width: calc(100% - 8.75rem);
-      min-height: 500px;
-      padding: 2rem;
+        .tabList {
+          position: relative;
+          width: 100%;
+          min-height: 500px;
+          padding: 48px;
+          display: flex;
+          justify-content: space-between;
 
-      // 코드 작동 안하고 있음
-      &:first-child {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        background-color: #156;
-      }
+          li {
+            font-size: 16px;
+            line-height: 2;
 
-      ul {
-        width: 50%;
-        padding: 1rem;
-        box-sizing: border-box;
+            &::before {
+              content: "· ";
+            }
 
-        li {
-          text-align: left;
-          font-size: 1rem;
-          line-height: 2;
-          list-style: disc;
+            &:hover {
+              color: #5cffc0;
+              cursor: pointer;
+            }
+          }
+
+          img {
+            width: 300px;
+            object-fit: contain;
+          }
         }
-      }
-
-      img {
-        width: 30%;
-        height: auto;
-        object-fit: contain;
       }
     }
   }
+
+  .ROADMAP {
+    display: none;
+  }
+
+  /* section ROADMAP 종료 */
+
+  /* section TEAM 시작 */
+  .TEAM {
+    > p {
+      font-size: 20px;
+      line-height: 36px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .swiper {
+      margin-top: 40px;
+      width: 100%;
+
+      ul {
+        li {
+          box-sizing: border-box;
+          background-color: #000;
+          border-radius: 13px;
+          padding: 10px;
+          margin-left: 1.5px;
+
+          .img_area {
+            img {
+              width: 100%;
+            }
+          }
+
+          .title_area {
+            text-align: center;
+            white-space: nowrap;
+
+            .name {
+              padding: 10px;
+              font-size: 26px;
+              line-height: 26px;
+            }
+
+            .job {
+              padding: 10px;
+              font-size: 16px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* section TEAM 종료 */
+
+  /* section PARTNERS 시작 */
+
+  .PARTNERS {
+    .inner {
+      p {
+        text-align: center;
+        font-size: 20px;
+        line-height: 2;
+      }
+
+      ul {
+        // width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+
+        li {
+          // width: 16.6666%;
+          box-sizing: border-box;
+          padding: 8px;
+
+          div {
+            // min-height: 112px;
+            border-radius: 16px;
+            background-color: #161616;
+          }
+        }
+      }
+    }
+  }
+
+  .PARTNERS {
+    display: none;
+  }
+
+  /* section PARTNERS 종료 */
 }
-
-/* section ROADMAP 종료 */
-
 
 /* main 종료 */

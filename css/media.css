@@ -24,12 +24,18 @@
     font-size: 12px;
   }
   main .PROMO video {
-    width: 95%;
+    width: 100%;
   }
   main .UNIVERSE .swiper {
-    width: 95%;
+    width: 92%;
   }
   main .UNIVERSE .swiper .swiper-wrapper .swiper-slide {
+    margin-left: 0;
+  }
+  main .TEAM .swiper {
+    width: 92%;
+  }
+  main .TEAM .swiper .swiper-wrapper .swiper-slide {
     margin-left: 0;
   }
 }/*# sourceMappingURL=media.css.map */

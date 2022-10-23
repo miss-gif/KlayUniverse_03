@@ -56,13 +56,26 @@
 
     .PROMO {
       video {
-        width: 95%;
+        width: 100%;
       }
     }
 
     .UNIVERSE {
       .swiper{
-        width: 95%;
+        width: 92%;
+        .swiper-wrapper {
+          .swiper-slide {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    .ROADMAP {}
+
+    .TEAM {
+      .swiper{
+        width: 92%;
         .swiper-wrapper {
           .swiper-slide {
             margin-left: 0;
