@@ -1,57 +1,68 @@
 html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Lato", sans-serif;
   font-size: 16px;
-  background-color: #010101df;
-  color: #fff;  
-}
+  scroll-behavior: smooth;
 
-a {
-  color: #fff;
-}
+  body {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #000;
+    background-color: #333;
+    color: #fff;
 
-.btnStyle {
-  width: 280px;
-  height: 60px;
-  font-size: 20px;
-  border-radius: 30px;
-  background-color: transparent;
-  border: 1px solid #fff;
-  transition: 0.3s;
-  text-align: center;
-  line-height: 60px;
-  box-sizing: border-box;
+    a {
+      color: #fff;
+    }
 
-  &:hover {
-    background: linear-gradient(to right, #31f8ab, #39c2ee);
-    border: transparent;
-    color: #101010;
+    .inner {
+      width: 1360px;
+      margin: 0 auto;
+    }
+
+    .row {
+      box-sizing: border-box;
+      padding: 0 2rem;
+    }
+
+    .active {
+      color: #5cffc0;
+    }
+
+    .hide {
+      display: none;
+      z-index: -10;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .btnStyle {
+      width: 17.5rem;
+      height: 3.75rem;
+      font-size: 1.25rem;
+      border-radius: 1.875rem;
+      background-color: transparent;
+      border: 1px solid #fff;
+      transition: 0.3s;
+      text-align: center;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btnStyle:hover {
+      background: linear-gradient(to right, #31f8ab, #39c2ee);
+      border: transparent;
+      color: #101010;
+    }
   }
 }
 
-.inner {
-  width: 1360px;
-  margin: 0 auto;
-}
-
-.row {
-  box-sizing: border-box;
-  padding: 0 32px;
-}
-
-.active {
-  color: #5cffc0;
-}
-
-.hide {
-  display: none;
-  z-index: -10;
-  width: 0;
-  height: 0;
-  overflow: hidden;
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* header 시작 */
@@ -59,38 +70,27 @@ a {
 header {
   position: fixed;
   width: 100%;
-  height: 70px;
+  height: 4.375rem;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 99;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
 
-  .inner {
-    .header {
-      display: flex;
-      justify-content: space-between;
+  .header {
+    display: flex;
+    justify-content: space-between;
 
-      h1 {
-        a {
-          img {
-          }
-        }
-      }
+    nav {
+      width: calc(100% - 13.75rem);
 
-      nav {
-        width: calc(100% - 220px);
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
 
-        ul {
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-
-          li {
-            a {
-              &:hover {
-                color: #5cffc0;
-              }
+        li {
+          a {
+            &:hover {
+              color: #5cffc0;
             }
           }
         }
@@ -107,15 +107,14 @@ main {
   section {
     position: relative;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
+    margin-bottom: 20vh;
+    @include flexCenter;
     flex-direction: column;
 
     h2 {
       text-align: center;
-      font-size: 48px;
+      font-size: 3rem;
       font-weight: 600;
       line-height: 2;
     }
@@ -123,6 +122,8 @@ main {
 
   /* section main_VIDEO 시작 */
   .main_VIDEO {
+
+    // 딤드 표현
     &::after {
       position: absolute;
       top: 0;
@@ -144,11 +145,11 @@ main {
       z-index: -2;
     }
 
-    > p {
-      font-size: 72px;
+    >p {
+      font-size: 4.5rem;
       font-weight: 600;
       line-height: 1.5;
-      margin-bottom: 4.25rem;
+      margin-bottom: 68px;
       text-align: center;
 
       strong {
@@ -156,16 +157,16 @@ main {
       }
     }
 
-    > .mouseScroll {
+    >.mouseScroll {
       position: absolute;
-      bottom: 30px;
-      width: 10px;
+      bottom: 1.875rem;
+      width: 0.625rem;
       display: flex;
       align-items: center;
       flex-direction: column;
 
-      > img {
-        margin: 4px;
+      >img {
+        margin: 0.25rem;
         animation-name: move; // 애니메이션 명
         animation-duration: 0.4s; // 완료까지 걸리는 시간 설정
         animation-timing-function: linear; // 속도 곡선 설정
@@ -175,12 +176,12 @@ main {
 
       @keyframes move {
         100% {
-          margin: 0rem;
+          margin: 0px;
         }
       }
 
-      > p {
-        margin-top: 6px;
+      >p {
+        margin-top: 0.375rem;
         color: rgba(#5cffc0, 0.3);
       }
     }
@@ -188,27 +189,14 @@ main {
 
   /* section main_VIDEO 종료 */
 
-  /* section PROMO 시작 */
-  .PROMO {
-    .row {
-      h2 {
-        margin-bottom: 20px;
-      }
-    }
-  }
-
-  /* section PROMO 종료 */
-
   /* section UNIVERSE 시작 */
   .UNIVERSE {
-    h2 {
-    }
 
     p {
       text-align: center;
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 1.8;
-      margin-bottom: 30px;
+      margin-bottom: 3.125rem;
     }
 
     .swiper {
@@ -217,19 +205,19 @@ main {
       .swiper-wrapper {
         .swiper-slide {
           box-sizing: border-box;
-          padding: 15px 15px 0 15px;
-          border-radius: 16px;
+          padding: 0.9375rem 0.9375rem 0 0.9375rem;
+          border-radius: 1rem;
           background-color: #000;
-          margin-left: 1.5px;
+          margin-left: 0.125rem;
 
           img {
             width: 100%;
-            border-radius: 12px;
+            border-radius: 0.75rem;
           }
 
           p {
-            font-size: 16px;
-            padding: 5px;
+            font-size: 1rem;
+            padding: 0.3125rem;
             margin-bottom: 0;
 
             span {
@@ -241,7 +229,7 @@ main {
     }
 
     a {
-      margin-top: 60px;
+      margin-top: 3.75rem;
     }
   }
 
@@ -252,26 +240,23 @@ main {
   .ROADMAP {
     .row {
       width: 100%;
-      max-width: 1160px;
-
-      h2 {
-      }
-
+      max-width: 72.5rem;
+      
       article {
         display: flex;
-        border-radius: 16px;
+        border-radius: 1rem;
         background-color: #000;
 
         .tabMenu {
-          min-width: 144px;
-          border-radius: 16px 0 0 16px;
-          background-color: #333;
+          min-width: 7.875rem;
+          border-radius: 1rem 0 0 1rem;
+          background-color: #111;
 
           li {
             position: relative;
-            height: 39px;
-            font-size: 32px;
-            padding: 24px 0;
+            height: 2.4375rem;
+            font-size: 2rem;
+            padding: 1.5rem 0;
             text-align: center;
           }
 
@@ -279,29 +264,28 @@ main {
             &:before {
               position: absolute;
               content: "";
-              width: 4px;
-              height: 30px;
+              width: 3px;
+              height: 40%;
               background-color: #5cffc0;
               top: 48%;
               left: 0;
               transform: translate(-50%, -50%);
-              border-radius: 5px;
+              border-radius: 0.3125rem;
             }
           }
         }
 
         .tabList {
           width: 100%;
-          max-width: 920px;
-          min-height: 500px;
-          padding: 48px;
+          min-height: 32.5rem;
+          padding: 3rem;
           background-color: #000;
-          border-radius: 0 16px 16px 0;
+          border-radius: 0 1rem 1rem 0;
           box-sizing: border-box;
 
           li {
             display: flex;
-
+            justify-content: space-between;
             ul {
               li {
                 display: block;
@@ -320,9 +304,9 @@ main {
           }
 
           img {
-            margin-left: 120px;
+            margin-left: 6.25rem;
             display: block;
-            width: 200px;
+            width: 12.5rem;
             object-fit: contain;
           }
         }
@@ -334,24 +318,23 @@ main {
 
   /* section TEAM 시작 */
   .TEAM {
-    > p {
-      font-size: 20px;
-      line-height: 36px;
-      font-weight: 400;
+    >p {
+      font-size: 1.25rem;
+      line-height: 2;
       text-align: center;
     }
 
     .swiper {
-      margin-top: 40px;
       width: 100%;
+      margin-top: 2.5rem;
 
-      ul {
-        li {
+      .swiper-wrapper {
+        .swiper-slide {
           box-sizing: border-box;
           background-color: #000;
-          border-radius: 13px;
-          padding: 10px;
-          margin-left: 1.5px;
+          border-radius: 0.8125rem;
+          padding: 0.625rem;
+          margin-left: 0.125rem;
 
           .img_area {
             img {
@@ -364,15 +347,15 @@ main {
             white-space: nowrap;
 
             .name {
-              padding: 10px;
-              font-size: 26px;
-              line-height: 26px;
+              padding: 0.625rem;
+              font-size: 1.625rem;
+              line-height: 1.625rem;
             }
 
             .job {
-              padding: 10px;
-              font-size: 16px;
-              line-height: 16px;
+              padding: 0.625rem;
+              font-size: 1rem;
+              line-height: 1rem;
             }
           }
         }
@@ -387,31 +370,30 @@ main {
   .PARTNERS {
     .inner {
       width: 100%;
-      max-width: 1360px;
+      max-width: 85rem;
 
-      .row {
+     
         p {
           text-align: center;
-          font-size: 20px;
-          line-height: 2;
+          font-size: 1.25rem;
         }
 
         ul {
           display: flex;
           flex-wrap: wrap;
-          margin-top: 2rem;
+          margin-top: 32px;
 
           li {
             width: 16.6666%;
             box-sizing: border-box;
-            padding: 8px;
+            padding: 0.5rem;
 
             div {
-              min-height: 112px;
-              border-radius: 16px;
+              min-height: 7rem;
+              border-radius: 1rem;
               background-color: #161616;
             }
-          }
+          
         }
       }
     }
@@ -422,14 +404,13 @@ main {
   /* section COMMUNITY 시작 */
 
   .GALLERY {
-    h2 {
-    }
+    h2 {}
 
     p {
       text-align: center;
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 1.8;
-      margin-bottom: 30px;
+      margin-bottom: 1.875rem;
     }
 
     .swiper {
@@ -438,10 +419,10 @@ main {
       .swiper-wrapper {
         .swiper-slide {
           box-sizing: border-box;
-          padding: 10px;
-          border-radius: 10px;
+          padding: 0.625rem;
+          border-radius: 0.625rem;
           background-color: #000;
-          margin-left: 1.5px;
+          margin-left: 0.125rem;
 
           img {
             width: 100%;
@@ -451,7 +432,7 @@ main {
     }
 
     a {
-      margin-top: 60px;
+      margin-top: 3.75rem;
     }
   }
 
@@ -464,7 +445,8 @@ main {
 
 footer {
   h2 {
-    font-size: 48px;
+    margin-top: 20vh;
+    font-size: 3rem;
     font-weight: 600;
     line-height: 1.5;
     text-align: center;
@@ -474,9 +456,7 @@ footer {
   .footerInfo {
     background-image: url(../img/footer/footerBG.png);
     height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
   }
 
   .inner {
@@ -491,24 +471,24 @@ footer {
 
           p {
             font-weight: 500;
-            font-size: 20px;
-            margin-bottom: 24px;
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
           }
 
           form {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 16px;
-            width: 320px;
-            height: 50px;
-            border-radius: 16px;
+            padding: 1rem;
+            width: 20rem;
+            height: 3.125rem;
+            border-radius: 1rem;
             background-color: #000;
             box-sizing: border-box;
 
             input {
-              width: 300px;
-              font-size: 16px;
+              width: 18.75rem;
+              font-size: 1rem;
               outline: none;
               background-color: transparent;
               border: 0;
@@ -516,8 +496,8 @@ footer {
             }
 
             input[type="submit"] {
-              width: 70px;
-              font-size: 16px;
+              width: 4.375rem;
+              font-size: 1rem;
               background-color: transparent;
               border: 0;
               color: #5cffc0;
@@ -532,10 +512,10 @@ footer {
           align-items: flex-end;
 
           a {
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: 600;
             text-decoration: underline;
-            padding-bottom: 16px;
+            padding-bottom: 1rem;
 
             &:hover {
               color: #5cffc0;
@@ -547,7 +527,7 @@ footer {
 
             li {
               a {
-                margin-left: 10px;
+                margin-left: 0.625rem;
                 // background-color: #fff;
               }
             }
@@ -555,11 +535,10 @@ footer {
         }
       }
 
-      > p {
-        margin-top: 48px;
+      >p {
+        margin-top: 3rem;
         text-align: center;
-        font-weight: 400;
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 1.8;
         color: #5cffc0;
       }

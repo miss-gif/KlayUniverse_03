@@ -1,4 +1,10 @@
 @media (max-width: 940px) {
+  html {
+    font-size: 14px;
+  }
+  html body {
+    font-size: 1rem;
+  }
   header {
     padding: 0;
   }
@@ -14,14 +20,13 @@
     font-size: 30px;
   }
   main .main_VIDEO a {
-    width: 208px;
-    height: 43px;
-    font-size: 15px;
-    line-height: 43px;
+    width: 13rem;
+    height: 2.6875rem;
+    font-size: 0.9375rem;
     transition: 0s;
   }
   main .main_VIDEO > .mouseScroll > p {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   main .PROMO video {
     width: 100%;
@@ -41,14 +46,14 @@
   main .ROADMAP .row article .tabMenu {
     display: flex;
     width: 100%;
-    border-radius: 16px 16px 0 0;
+    border-radius: 1rem 1rem 0 0;
   }
   main .ROADMAP .row article .tabMenu li {
-    width: 80px;
+    width: 5rem;
   }
   main .ROADMAP .row article .tabMenu .active:before {
     bottom: 0;
-    height: 4px;
+    height: 0.25rem;
     top: auto;
     width: 100%;
     transform: translate(0%, 34%);
@@ -58,8 +63,14 @@
   }
   main .ROADMAP .row article .tabList img {
     margin-left: 0;
-    margin: 20px 0;
-    width: 150px;
+    margin: 1.25rem 0;
+    width: 9.375rem;
+  }
+  main .PARTNERS .inner ul li {
+    width: 25%;
+  }
+  main .PARTNERS .inner ul li div {
+    min-height: 4rem;
   }
   main .TEAM .swiper {
     width: 92%;
@@ -91,25 +102,25 @@
   }
   footer .footerInfo .inner .row div .rightBox {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 32px;
   }
   footer .footerInfo .inner .row div .rightBox a {
-    font-size: 16px;
+    font-size: 1rem;
   }
   footer .footerInfo .inner .row div .rightBox ul {
-    margin-top: 50px;
+    margin-top: 3.125rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   footer .footerInfo .inner .row div .rightBox ul li {
-    margin: 0 20px;
+    margin: 0 1.25rem;
   }
   footer .footerInfo .inner .row div .rightBox ul li a {
     margin-left: 0;
   }
   footer .footerInfo .inner .row div .rightBox ul li a img {
-    width: 40px;
+    width: 2.5rem;
   }
 }/*# sourceMappingURL=media.css.map */

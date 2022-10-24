@@ -1,83 +1,81 @@
 @charset "UTF-8";
 html {
+  font-size: 16px;
   scroll-behavior: smooth;
 }
-
-body {
+html body {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
-  background-color: rgba(1, 1, 1, 0.8745098039);
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #000;
+  background-color: #333;
   color: #fff;
 }
-
-a {
+html body a {
   color: #fff;
 }
-
-.btnStyle {
-  width: 280px;
-  height: 60px;
-  font-size: 20px;
-  border-radius: 30px;
-  background-color: transparent;
-  border: 1px solid #fff;
-  transition: 0.3s;
-  text-align: center;
-  line-height: 60px;
-  box-sizing: border-box;
-}
-.btnStyle:hover {
-  background: linear-gradient(to right, #31f8ab, #39c2ee);
-  border: transparent;
-  color: #101010;
-}
-
-.inner {
+html body .inner {
   width: 1360px;
   margin: 0 auto;
 }
-
-.row {
+html body .row {
   box-sizing: border-box;
-  padding: 0 32px;
+  padding: 0 2rem;
 }
-
-.active {
+html body .active {
   color: #5cffc0;
 }
-
-.hide {
+html body .hide {
   display: none;
   z-index: -10;
   width: 0;
   height: 0;
   overflow: hidden;
 }
+html body .btnStyle {
+  width: 17.5rem;
+  height: 3.75rem;
+  font-size: 1.25rem;
+  border-radius: 1.875rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  transition: 0.3s;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body .btnStyle:hover {
+  background: linear-gradient(to right, #31f8ab, #39c2ee);
+  border: transparent;
+  color: #101010;
+}
 
 /* header 시작 */
 header {
   position: fixed;
   width: 100%;
-  height: 70px;
+  height: 4.375rem;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 99;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .inner .header {
+header .header {
   display: flex;
   justify-content: space-between;
 }
-header .inner .header nav {
-  width: calc(100% - 220px);
+header .header nav {
+  width: calc(100% - 13.75rem);
 }
-header .inner .header nav ul {
+header .header nav ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-header .inner .header nav ul li a:hover {
+header .header nav ul li a:hover {
   color: #5cffc0;
 }
 
@@ -86,8 +84,6 @@ header .inner .header nav ul li a:hover {
 main {
   /* section main_VIDEO 시작 */
   /* section main_VIDEO 종료 */
-  /* section PROMO 시작 */
-  /* section PROMO 종료 */
   /* section UNIVERSE 시작 */
   /* section UNIVERSE 종료 */
   /* section ROADMAP 시작 */
@@ -102,7 +98,8 @@ main {
 main section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  margin-bottom: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +107,7 @@ main section {
 }
 main section h2 {
   text-align: center;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 2;
 }
@@ -135,10 +132,10 @@ main .main_VIDEO video {
   z-index: -2;
 }
 main .main_VIDEO > p {
-  font-size: 72px;
+  font-size: 4.5rem;
   font-weight: 600;
   line-height: 1.5;
-  margin-bottom: 4.25rem;
+  margin-bottom: 68px;
   text-align: center;
 }
 main .main_VIDEO > p strong {
@@ -146,14 +143,14 @@ main .main_VIDEO > p strong {
 }
 main .main_VIDEO > .mouseScroll {
   position: absolute;
-  bottom: 30px;
-  width: 10px;
+  bottom: 1.875rem;
+  width: 0.625rem;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 main .main_VIDEO > .mouseScroll > img {
-  margin: 4px;
+  margin: 0.25rem;
   -webkit-animation-name: move;
           animation-name: move;
   -webkit-animation-duration: 0.4s;
@@ -167,95 +164,92 @@ main .main_VIDEO > .mouseScroll > img {
 }
 @-webkit-keyframes move {
   100% {
-    margin: 0rem;
+    margin: 0px;
   }
 }
 @keyframes move {
   100% {
-    margin: 0rem;
+    margin: 0px;
   }
 }
 main .main_VIDEO > .mouseScroll > p {
-  margin-top: 6px;
+  margin-top: 0.375rem;
   color: rgba(92, 255, 192, 0.3);
-}
-main .PROMO .row h2 {
-  margin-bottom: 20px;
 }
 main .UNIVERSE p {
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.8;
-  margin-bottom: 30px;
+  margin-bottom: 3.125rem;
 }
 main .UNIVERSE .swiper {
   width: 100%;
 }
 main .UNIVERSE .swiper .swiper-wrapper .swiper-slide {
   box-sizing: border-box;
-  padding: 15px 15px 0 15px;
-  border-radius: 16px;
+  padding: 0.9375rem 0.9375rem 0 0.9375rem;
+  border-radius: 1rem;
   background-color: #000;
-  margin-left: 1.5px;
+  margin-left: 0.125rem;
 }
 main .UNIVERSE .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0.75rem;
 }
 main .UNIVERSE .swiper .swiper-wrapper .swiper-slide p {
-  font-size: 16px;
-  padding: 5px;
+  font-size: 1rem;
+  padding: 0.3125rem;
   margin-bottom: 0;
 }
 main .UNIVERSE .swiper .swiper-wrapper .swiper-slide p span {
   color: #5cffc0;
 }
 main .UNIVERSE a {
-  margin-top: 60px;
+  margin-top: 3.75rem;
 }
 main .ROADMAP .row {
   width: 100%;
-  max-width: 1160px;
+  max-width: 72.5rem;
 }
 main .ROADMAP .row article {
   display: flex;
-  border-radius: 16px;
+  border-radius: 1rem;
   background-color: #000;
 }
 main .ROADMAP .row article .tabMenu {
-  min-width: 144px;
-  border-radius: 16px 0 0 16px;
-  background-color: #333;
+  min-width: 7.875rem;
+  border-radius: 1rem 0 0 1rem;
+  background-color: #111;
 }
 main .ROADMAP .row article .tabMenu li {
   position: relative;
-  height: 39px;
-  font-size: 32px;
-  padding: 24px 0;
+  height: 2.4375rem;
+  font-size: 2rem;
+  padding: 1.5rem 0;
   text-align: center;
 }
 main .ROADMAP .row article .tabMenu .active:before {
   position: absolute;
   content: "";
-  width: 4px;
-  height: 30px;
+  width: 3px;
+  height: 40%;
   background-color: #5cffc0;
   top: 48%;
   left: 0;
   transform: translate(-50%, -50%);
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
 main .ROADMAP .row article .tabList {
   width: 100%;
-  max-width: 920px;
-  min-height: 500px;
-  padding: 48px;
+  min-height: 32.5rem;
+  padding: 3rem;
   background-color: #000;
-  border-radius: 0 16px 16px 0;
+  border-radius: 0 1rem 1rem 0;
   box-sizing: border-box;
 }
 main .ROADMAP .row article .tabList li {
   display: flex;
+  justify-content: space-between;
 }
 main .ROADMAP .row article .tabList li ul li {
   display: block;
@@ -269,97 +263,96 @@ main .ROADMAP .row article .tabList li ul li:hover {
   cursor: pointer;
 }
 main .ROADMAP .row article .tabList img {
-  margin-left: 120px;
+  margin-left: 6.25rem;
   display: block;
-  width: 200px;
+  width: 12.5rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
 main .TEAM > p {
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2;
   text-align: center;
 }
 main .TEAM .swiper {
-  margin-top: 40px;
   width: 100%;
+  margin-top: 2.5rem;
 }
-main .TEAM .swiper ul li {
+main .TEAM .swiper .swiper-wrapper .swiper-slide {
   box-sizing: border-box;
   background-color: #000;
-  border-radius: 13px;
-  padding: 10px;
-  margin-left: 1.5px;
+  border-radius: 0.8125rem;
+  padding: 0.625rem;
+  margin-left: 0.125rem;
 }
-main .TEAM .swiper ul li .img_area img {
+main .TEAM .swiper .swiper-wrapper .swiper-slide .img_area img {
   width: 100%;
 }
-main .TEAM .swiper ul li .title_area {
+main .TEAM .swiper .swiper-wrapper .swiper-slide .title_area {
   text-align: center;
   white-space: nowrap;
 }
-main .TEAM .swiper ul li .title_area .name {
-  padding: 10px;
-  font-size: 26px;
-  line-height: 26px;
+main .TEAM .swiper .swiper-wrapper .swiper-slide .title_area .name {
+  padding: 0.625rem;
+  font-size: 1.625rem;
+  line-height: 1.625rem;
 }
-main .TEAM .swiper ul li .title_area .job {
-  padding: 10px;
-  font-size: 16px;
-  line-height: 16px;
+main .TEAM .swiper .swiper-wrapper .swiper-slide .title_area .job {
+  padding: 0.625rem;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 main .PARTNERS .inner {
   width: 100%;
-  max-width: 1360px;
+  max-width: 85rem;
 }
-main .PARTNERS .inner .row p {
+main .PARTNERS .inner p {
   text-align: center;
-  font-size: 20px;
-  line-height: 2;
+  font-size: 1.25rem;
 }
-main .PARTNERS .inner .row ul {
+main .PARTNERS .inner ul {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 32px;
 }
-main .PARTNERS .inner .row ul li {
+main .PARTNERS .inner ul li {
   width: 16.6666%;
   box-sizing: border-box;
-  padding: 8px;
+  padding: 0.5rem;
 }
-main .PARTNERS .inner .row ul li div {
-  min-height: 112px;
-  border-radius: 16px;
+main .PARTNERS .inner ul li div {
+  min-height: 7rem;
+  border-radius: 1rem;
   background-color: #161616;
 }
 main .GALLERY p {
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.8;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 main .GALLERY .swiper {
   width: 100%;
 }
 main .GALLERY .swiper .swiper-wrapper .swiper-slide {
   box-sizing: border-box;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 0.625rem;
+  border-radius: 0.625rem;
   background-color: #000;
-  margin-left: 1.5px;
+  margin-left: 0.125rem;
 }
 main .GALLERY .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
 }
 main .GALLERY a {
-  margin-top: 60px;
+  margin-top: 3.75rem;
 }
 
 /* main 종료 */
 /* footer 시작 */
 footer h2 {
-  font-size: 48px;
+  margin-top: 20vh;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 1.5;
   text-align: center;
@@ -382,31 +375,31 @@ footer .inner .row div .leftBox {
 }
 footer .inner .row div .leftBox p {
   font-weight: 500;
-  font-size: 20px;
-  margin-bottom: 24px;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 footer .inner .row div .leftBox form {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
-  width: 320px;
-  height: 50px;
-  border-radius: 16px;
+  padding: 1rem;
+  width: 20rem;
+  height: 3.125rem;
+  border-radius: 1rem;
   background-color: #000;
   box-sizing: border-box;
 }
 footer .inner .row div .leftBox form input {
-  width: 300px;
-  font-size: 16px;
+  width: 18.75rem;
+  font-size: 1rem;
   outline: none;
   background-color: transparent;
   border: 0;
   color: #fff;
 }
 footer .inner .row div .leftBox form input[type=submit] {
-  width: 70px;
-  font-size: 16px;
+  width: 4.375rem;
+  font-size: 1rem;
   background-color: transparent;
   border: 0;
   color: #5cffc0;
@@ -418,10 +411,10 @@ footer .inner .row div .rightBox {
   align-items: flex-end;
 }
 footer .inner .row div .rightBox a {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   text-decoration: underline;
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
 }
 footer .inner .row div .rightBox a:hover {
   color: #5cffc0;
@@ -430,13 +423,12 @@ footer .inner .row div .rightBox ul {
   display: flex;
 }
 footer .inner .row div .rightBox ul li a {
-  margin-left: 10px;
+  margin-left: 0.625rem;
 }
 footer .inner .row > p {
-  margin-top: 48px;
+  margin-top: 3rem;
   text-align: center;
-  font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.8;
   color: #5cffc0;
 }
