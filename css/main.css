@@ -321,36 +321,27 @@ main .PARTNERS .inner .row ul li div {
   border-radius: 16px;
   background-color: #161616;
 }
-main .GALLERY {
-  background-color: #156;
-}
-main .GALLERY .row {
-  padding: 0;
-  background-color: #222;
-}
-main .GALLERY .row p {
+main .GALLERY p {
   text-align: center;
   font-size: 20px;
   line-height: 1.8;
   margin-bottom: 30px;
 }
-main .GALLERY .row .swiper {
-  max-width: 1360px;
+main .GALLERY .swiper {
+  width: 100%;
 }
-main .GALLERY .row .swiper .swiper-wrapper .swiper-slide {
+main .GALLERY .swiper .swiper-wrapper .swiper-slide {
   box-sizing: border-box;
   padding: 10px;
   border-radius: 10px;
   background-color: #000;
+  margin-left: 1.5px;
 }
-main .GALLERY .row .swiper .swiper-wrapper .swiper-slide img {
+main .GALLERY .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
 }
-main .GALLERY .row .swiper .swiper-pagination {
-  display: none;
-}
 main .GALLERY a {
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 /* main 종료 *//*# sourceMappingURL=main.css.map */

@@ -67,4 +67,13 @@
   main .TEAM .swiper .swiper-wrapper .swiper-slide {
     margin-left: 0;
   }
+  main .GALLERY {
+    height: 150vh;
+  }
+  main .GALLERY .swiper {
+    width: 92%;
+  }
+  main .GALLERY .swiper .swiper-wrapper .swiper-slide {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=media.css.map */

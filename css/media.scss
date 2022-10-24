@@ -76,6 +76,7 @@
     .ROADMAP {
       .row {
         width: 100%;
+
         article {
           flex-direction: column;
 
@@ -101,8 +102,9 @@
 
           .tabList {
             flex-direction: column;
-            div {
-            }
+
+            div {}
+
             img {
               margin-left: 0;
               margin: 20px 0;
@@ -117,6 +119,19 @@
       .swiper {
         width: 92%;
 
+        .swiper-wrapper {
+          .swiper-slide {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    .GALLERY {
+      height: 150vh;
+
+      .swiper {
+        width: 92%;
         .swiper-wrapper {
           .swiper-slide {
             margin-left: 0;
