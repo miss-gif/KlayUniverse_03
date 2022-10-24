@@ -16,6 +16,9 @@
   header .inner nav {
     display: none;
   }
+  main section {
+    margin-bottom: 20vh;
+  }
   main .main_VIDEO > p {
     font-size: 30px;
   }

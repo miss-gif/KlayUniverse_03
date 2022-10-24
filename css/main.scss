@@ -1,16 +1,19 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  // cursor: url(../img/cursor.svg);
 
   body {
     font-family: "Lato", sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    background-color: #000;
-    background-color: #333; // 임시
+    background-color: #101010;
+    // background-color: #000;
     color: #fff;
     cursor: url(../img/cursor.svg), auto;
+
+    main {
+      background-image: url(../img/grid_background.png);
+    }
 
     a {
       color: #fff;
@@ -36,7 +39,7 @@ html {
 
     .hide {
       display: none;
-      z-index: -10;
+      z-index: -99;
       width: 0;
       height: 0;
       overflow: hidden;
@@ -114,7 +117,7 @@ main {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
     @include flexCenter;
     flex-direction: column;
 
@@ -128,6 +131,8 @@ main {
 
   /* section main_VIDEO 시작 */
   .main_VIDEO {
+    z-index: 1;
+
     // 딤드 표현
     &::after {
       position: absolute;
@@ -150,7 +155,7 @@ main {
       z-index: -2;
     }
 
-    > p {
+    >p {
       font-size: 4.5rem;
       font-weight: 600;
       line-height: 1.5;
@@ -162,7 +167,7 @@ main {
       }
     }
 
-    > .mouseScroll {
+    >.mouseScroll {
       position: absolute;
       bottom: 1.875rem;
       width: 0.625rem;
@@ -170,7 +175,7 @@ main {
       align-items: center;
       flex-direction: column;
 
-      > img {
+      >img {
         margin: 0.25rem;
         animation-name: move; // 애니메이션 명
         animation-duration: 0.4s; // 완료까지 걸리는 시간 설정
@@ -185,7 +190,7 @@ main {
         }
       }
 
-      > p {
+      >p {
         margin-top: 0.375rem;
         color: rgba(#5cffc0, 0.3);
       }
@@ -200,11 +205,11 @@ main {
       text-align: center;
       font-size: 1.25rem;
       line-height: 1.8;
-      margin-bottom: 3.125rem;
     }
 
     .swiper {
       width: 100%;
+      padding: 3.125rem 0;
 
       .swiper-wrapper {
         .swiper-slide {
@@ -212,7 +217,6 @@ main {
           padding: 0.9375rem 0.9375rem 0 0.9375rem;
           border-radius: 1rem;
           background-color: #000;
-          // background-color: #fff;
           margin-left: 0.125rem;
 
           img {
@@ -248,19 +252,35 @@ main {
   /* section ROADMAP 시작 */
 
   .ROADMAP {
+    &::after {
+      content: '';
+      position: absolute;
+      top: -30rem;
+      left: 0px;
+      width: 100%;
+      height: 200%;
+      background-image: url(../img/road/roadmap_bg.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      z-index: -10;
+    }
+
     .row {
       width: 100%;
       max-width: 72.5rem;
 
       article {
+        background-color: #000;
         display: flex;
         border-radius: 1rem;
-        background-color: #000;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
 
         .tabMenu {
           min-width: 7.875rem;
           border-radius: 1rem 0 0 1rem;
-          background-color: #111;
+          background-color: #0E0F0F;
+
 
           li {
             position: relative;
@@ -334,7 +354,7 @@ main {
 
   /* section TEAM 시작 */
   .TEAM {
-    > p {
+    >p {
       font-size: 1.25rem;
       line-height: 2;
       text-align: center;
@@ -342,7 +362,7 @@ main {
 
     .swiper {
       width: 100%;
-      margin-top: 2.5rem;
+      padding: 3.125rem 0;
 
       .swiper-wrapper {
         .swiper-slide {
@@ -418,18 +438,17 @@ main {
   /* section COMMUNITY 시작 */
 
   .GALLERY {
-    h2 {
-    }
+    h2 {}
 
     p {
       text-align: center;
       font-size: 1.25rem;
       line-height: 1.8;
-      margin-bottom: 1.875rem;
     }
 
     .swiper {
       width: 100%;
+      padding: 3.125rem 0;
 
       .swiper-wrapper {
         .swiper-slide {
@@ -447,7 +466,7 @@ main {
     }
 
     a {
-      margin-top: 3.75rem;
+      margin-top: 1.875rem;
     }
   }
 
@@ -553,7 +572,7 @@ footer {
         }
       }
 
-      > p {
+      >p {
         margin-top: 3rem;
         text-align: center;
         font-size: 0.875rem;

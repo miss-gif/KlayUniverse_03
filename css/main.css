@@ -7,10 +7,12 @@ html body {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  background-color: #000;
-  background-color: #333;
+  background-color: #101010;
   color: #fff;
   cursor: url(../img/cursor.svg), auto;
+}
+html body main {
+  background-image: url(../img/grid_background.png);
 }
 html body a {
   color: #fff;
@@ -31,7 +33,7 @@ html body .active {
 }
 html body .hide {
   display: none;
-  z-index: -10;
+  z-index: -99;
   width: 0;
   height: 0;
   overflow: hidden;
@@ -103,7 +105,7 @@ main section {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,6 +116,9 @@ main section h2 {
   font-size: 3rem;
   font-weight: 600;
   line-height: 2;
+}
+main .main_VIDEO {
+  z-index: 1;
 }
 main .main_VIDEO::after {
   position: absolute;
@@ -184,10 +189,10 @@ main .UNIVERSE p {
   text-align: center;
   font-size: 1.25rem;
   line-height: 1.8;
-  margin-bottom: 3.125rem;
 }
 main .UNIVERSE .swiper {
   width: 100%;
+  padding: 3.125rem 0;
 }
 main .UNIVERSE .swiper .swiper-wrapper .swiper-slide {
   box-sizing: border-box;
@@ -215,19 +220,33 @@ main .UNIVERSE .swiper .swiper-wrapper .swiper-slide p span {
 main .UNIVERSE a {
   margin-top: 3.75rem;
 }
+main .ROADMAP::after {
+  content: "";
+  position: absolute;
+  top: -30rem;
+  left: 0px;
+  width: 100%;
+  height: 200%;
+  background-image: url(../img/road/roadmap_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -10;
+}
 main .ROADMAP .row {
   width: 100%;
   max-width: 72.5rem;
 }
 main .ROADMAP .row article {
+  background-color: #000;
   display: flex;
   border-radius: 1rem;
-  background-color: #000;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
 }
 main .ROADMAP .row article .tabMenu {
   min-width: 7.875rem;
   border-radius: 1rem 0 0 1rem;
-  background-color: #111;
+  background-color: #0E0F0F;
 }
 main .ROADMAP .row article .tabMenu li {
   position: relative;
@@ -289,7 +308,7 @@ main .TEAM > p {
 }
 main .TEAM .swiper {
   width: 100%;
-  margin-top: 2.5rem;
+  padding: 3.125rem 0;
 }
 main .TEAM .swiper .swiper-wrapper .swiper-slide {
   box-sizing: border-box;
@@ -342,10 +361,10 @@ main .GALLERY p {
   text-align: center;
   font-size: 1.25rem;
   line-height: 1.8;
-  margin-bottom: 1.875rem;
 }
 main .GALLERY .swiper {
   width: 100%;
+  padding: 3.125rem 0;
 }
 main .GALLERY .swiper .swiper-wrapper .swiper-slide {
   box-sizing: border-box;
@@ -358,7 +377,7 @@ main .GALLERY .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
 }
 main .GALLERY a {
-  margin-top: 3.75rem;
+  margin-top: 1.875rem;
 }
 
 /* main 종료 */
