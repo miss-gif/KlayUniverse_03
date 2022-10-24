@@ -76,4 +76,40 @@
   main .GALLERY .swiper .swiper-wrapper .swiper-slide {
     margin-left: 0;
   }
+  footer .footerInfo .inner .row div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .footerInfo .inner .row div .leftBox {
+    width: 100%;
+  }
+  footer .footerInfo .inner .row div .leftBox form {
+    width: 100%;
+  }
+  footer .footerInfo .inner .row div .leftBox form input[type=email] {
+    width: 100%;
+  }
+  footer .footerInfo .inner .row div .rightBox {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  footer .footerInfo .inner .row div .rightBox a {
+    font-size: 16px;
+  }
+  footer .footerInfo .inner .row div .rightBox ul {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footerInfo .inner .row div .rightBox ul li {
+    margin: 0 20px;
+  }
+  footer .footerInfo .inner .row div .rightBox ul li a {
+    margin-left: 0;
+  }
+  footer .footerInfo .inner .row div .rightBox ul li a img {
+    width: 40px;
+  }
 }/*# sourceMappingURL=media.css.map */
