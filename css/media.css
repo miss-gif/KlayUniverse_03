@@ -58,6 +58,9 @@
     width: 100%;
     transform: translate(0%, 34%);
   }
+  main .ROADMAP .row article .tabList {
+    border-radius: 1rem;
+  }
   main .ROADMAP .row article .tabList li {
     flex-direction: column;
   }

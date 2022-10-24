@@ -10,9 +10,13 @@ html body {
   background-color: #000;
   background-color: #333;
   color: #fff;
+  cursor: url(../img/cursor.svg), auto;
 }
 html body a {
   color: #fff;
+}
+html body a:hover {
+  cursor: url(../img/mouse.png), auto;
 }
 html body .inner {
   width: 1360px;
@@ -196,6 +200,10 @@ main .UNIVERSE .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   border-radius: 0.75rem;
 }
+main .UNIVERSE .swiper .swiper-wrapper .swiper-slide video {
+  width: 100%;
+  border-radius: 0.75rem;
+}
 main .UNIVERSE .swiper .swiper-wrapper .swiper-slide p {
   font-size: 1rem;
   padding: 0.3125rem;
@@ -260,12 +268,17 @@ main .ROADMAP .row article .tabList li ul li::before {
 }
 main .ROADMAP .row article .tabList li ul li:hover {
   color: #5cffc0;
-  cursor: pointer;
 }
 main .ROADMAP .row article .tabList img {
   margin-left: 6.25rem;
   display: block;
   width: 12.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .ROADMAP .row article .tabList video {
+  display: block;
+  width: 45%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -360,6 +373,9 @@ footer h2 {
 }
 footer .footerInfo {
   background-image: url(../img/footer/footerBG.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 50vh;
   display: flex;
   justify-content: center;
