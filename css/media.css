@@ -53,7 +53,7 @@
     width: 100%;
     transform: translate(0%, 34%);
   }
-  main .ROADMAP .row article .tabList {
+  main .ROADMAP .row article .tabList li {
     flex-direction: column;
   }
   main .ROADMAP .row article .tabList img {

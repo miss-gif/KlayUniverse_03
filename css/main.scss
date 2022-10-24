@@ -1,8 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   background-color: #010101df;
-  color: #fff;
+  color: #fff;  
 }
 
 a {
@@ -44,6 +48,10 @@ a {
 
 .hide {
   display: none;
+  z-index: -10;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 /* header 시작 */
@@ -65,7 +73,8 @@ header {
 
       h1 {
         a {
-          img {}
+          img {
+          }
         }
       }
 
@@ -135,7 +144,7 @@ main {
       z-index: -2;
     }
 
-    >p {
+    > p {
       font-size: 72px;
       font-weight: 600;
       line-height: 1.5;
@@ -147,7 +156,7 @@ main {
       }
     }
 
-    >.mouseScroll {
+    > .mouseScroll {
       position: absolute;
       bottom: 30px;
       width: 10px;
@@ -155,7 +164,7 @@ main {
       align-items: center;
       flex-direction: column;
 
-      >img {
+      > img {
         margin: 4px;
         animation-name: move; // 애니메이션 명
         animation-duration: 0.4s; // 완료까지 걸리는 시간 설정
@@ -170,7 +179,7 @@ main {
         }
       }
 
-      >p {
+      > p {
         margin-top: 6px;
         color: rgba(#5cffc0, 0.3);
       }
@@ -192,7 +201,8 @@ main {
 
   /* section UNIVERSE 시작 */
   .UNIVERSE {
-    h2 {}
+    h2 {
+    }
 
     p {
       text-align: center;
@@ -244,7 +254,8 @@ main {
       width: 100%;
       max-width: 1160px;
 
-      h2 {}
+      h2 {
+      }
 
       article {
         display: flex;
@@ -252,7 +263,7 @@ main {
         background-color: #000;
 
         .tabMenu {
-          width: 144px;
+          min-width: 144px;
           border-radius: 16px 0 0 16px;
           background-color: #333;
 
@@ -280,24 +291,30 @@ main {
         }
 
         .tabList {
+          width: 100%;
           max-width: 920px;
-          height: 404px;
+          min-height: 500px;
           padding: 48px;
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
+          background-color: #000;
+          border-radius: 0 16px 16px 0;
+          box-sizing: border-box;
 
-          div {
-            li {
-              line-height: 2;
+          li {
+            display: flex;
 
-              &::before {
-                content: "· ";
-              }
+            ul {
+              li {
+                display: block;
+                line-height: 2;
 
-              &:hover {
-                color: #5cffc0;
-                cursor: pointer;
+                &::before {
+                  content: "· ";
+                }
+
+                &:hover {
+                  color: #5cffc0;
+                  cursor: pointer;
+                }
               }
             }
           }
@@ -317,7 +334,7 @@ main {
 
   /* section TEAM 시작 */
   .TEAM {
-    >p {
+    > p {
       font-size: 20px;
       line-height: 36px;
       font-weight: 400;
@@ -405,7 +422,8 @@ main {
   /* section COMMUNITY 시작 */
 
   .GALLERY {
-    h2 {}
+    h2 {
+    }
 
     p {
       text-align: center;
@@ -445,7 +463,6 @@ main {
 /* footer 시작 */
 
 footer {
-  
   h2 {
     font-size: 48px;
     font-weight: 600;
@@ -471,6 +488,7 @@ footer {
         .leftBox {
           display: flex;
           flex-direction: column;
+
           p {
             font-weight: 500;
             font-size: 20px;
@@ -487,6 +505,7 @@ footer {
             border-radius: 16px;
             background-color: #000;
             box-sizing: border-box;
+
             input {
               width: 300px;
               font-size: 16px;
@@ -495,6 +514,7 @@ footer {
               border: 0;
               color: #fff;
             }
+
             input[type="submit"] {
               width: 70px;
               font-size: 16px;
@@ -510,11 +530,13 @@ footer {
           display: flex;
           flex-direction: column;
           align-items: flex-end;
+
           a {
             font-size: 20px;
-            font-weight: 600;    
-            text-decoration: underline;       
-            padding-bottom: 16px; 
+            font-weight: 600;
+            text-decoration: underline;
+            padding-bottom: 16px;
+
             &:hover {
               color: #5cffc0;
             }
@@ -522,6 +544,7 @@ footer {
 
           ul {
             display: flex;
+
             li {
               a {
                 margin-left: 10px;
@@ -531,7 +554,8 @@ footer {
           }
         }
       }
-      >p {
+
+      > p {
         margin-top: 48px;
         text-align: center;
         font-weight: 400;
@@ -541,7 +565,6 @@ footer {
       }
     }
   }
-
 }
 
 /* footer 종료 */

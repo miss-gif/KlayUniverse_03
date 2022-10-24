@@ -101,9 +101,10 @@
           }
 
           .tabList {
-            flex-direction: column;
 
-            div {}
+            li {
+              flex-direction: column;
+            }
 
             img {
               margin-left: 0;

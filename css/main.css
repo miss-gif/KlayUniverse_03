@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -44,6 +48,10 @@ a {
 
 .hide {
   display: none;
+  z-index: -10;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 /* header 시작 */
@@ -215,7 +223,7 @@ main .ROADMAP .row article {
   background-color: #000;
 }
 main .ROADMAP .row article .tabMenu {
-  width: 144px;
+  min-width: 144px;
   border-radius: 16px 0 0 16px;
   background-color: #333;
 }
@@ -238,20 +246,25 @@ main .ROADMAP .row article .tabMenu .active:before {
   border-radius: 5px;
 }
 main .ROADMAP .row article .tabList {
+  width: 100%;
   max-width: 920px;
-  height: 404px;
+  min-height: 500px;
   padding: 48px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  background-color: #000;
+  border-radius: 0 16px 16px 0;
+  box-sizing: border-box;
 }
-main .ROADMAP .row article .tabList div li {
+main .ROADMAP .row article .tabList li {
+  display: flex;
+}
+main .ROADMAP .row article .tabList li ul li {
+  display: block;
   line-height: 2;
 }
-main .ROADMAP .row article .tabList div li::before {
+main .ROADMAP .row article .tabList li ul li::before {
   content: "· ";
 }
-main .ROADMAP .row article .tabList div li:hover {
+main .ROADMAP .row article .tabList li ul li:hover {
   color: #5cffc0;
   cursor: pointer;
 }
