@@ -50,14 +50,27 @@
     </header>
     <!-- header 종료 -->
 
+    <aside>
+      <ul>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="https://klayuniverse.gitbook.io/whitepaper/welcome-to-klay-universe/create-your-own-universe"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul>
+    </aside>
+
     <main>
       <section id="main_VIDEO" class="main_VIDEO">
-        <h2 class="ir_so">main_VIDEO</h2>
         <video autoplay muted loop src="./Video/main.mp4"></video>
-        <p>
+        <h2>
           5,000 Metaverse Worlds, <br />
           <strong>On Klaytn Blockchain.</strong>
-        </p>
+        </h2>
         <a href="https://discord.com/invite/fveVY8YMhX" target="_blank" class="btnStyle">Join Discord</a>
         <div class="mouseScroll">
           <img src="./img/mouse_icon.svg" alt="mouseScroll" />
@@ -458,9 +471,9 @@
             <div>
               <div class="leftBox">
                 <p>Join our community</p>
-                <form action="">
-                  <label for=""></label>
-                  <input type="email" placeholder="Enter your email address." />
+                <form method="get" autocomplete>
+                  <label for="useEmail"></label>
+                  <input type="email" id="useEmail" name="useEmail" placeholder="Enter your email address." />
                   <input type="submit" value="SUBMIT" />
                 </form>
               </div>

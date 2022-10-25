@@ -20,7 +20,7 @@
     margin-bottom: 20vh;
   }
   main .main_VIDEO > p {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   main .main_VIDEO a {
     width: 13rem;
@@ -108,7 +108,7 @@
   }
   footer .footerInfo .inner .row div .rightBox {
     width: 100%;
-    margin-top: 32px;
+    margin-top: 2rem;
   }
   footer .footerInfo .inner .row div .rightBox a {
     font-size: 1rem;
@@ -128,5 +128,6 @@
   }
   footer .footerInfo .inner .row div .rightBox ul li a img {
     width: 2.5rem;
+    width: 1.875rem;
   }
 }/*# sourceMappingURL=media.css.map */
