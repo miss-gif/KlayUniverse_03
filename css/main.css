@@ -86,6 +86,7 @@ header .header nav ul li a:hover {
 }
 
 /* header 종료 */
+/* aside 시작 */
 aside {
   position: fixed;
   top: 140px;
@@ -223,6 +224,7 @@ aside ul li:nth-child(3) a:hover::before {
   border-left: 1rem solid #fff;
 }
 
+/* aside 종료 */
 /* main 시작 */
 main {
   /* section main_VIDEO 시작 */
@@ -237,6 +239,8 @@ main {
   /* section PARTNERS 종료 */
   /* section COMMUNITY 시작 */
   /* section COMMUNITY 종료 */
+  /* modalNotPage 시작 */
+  /* modalNotPage 종료 */
 }
 main section {
   position: relative;
@@ -383,7 +387,7 @@ main .ROADMAP .row article {
 main .ROADMAP .row article .tabMenu {
   min-width: 7.875rem;
   border-radius: 1rem 0 0 1rem;
-  background-color: #0E0F0F;
+  background-color: #0e0f0f;
 }
 main .ROADMAP .row article .tabMenu li {
   position: relative;
@@ -515,6 +519,36 @@ main .GALLERY .swiper .swiper-wrapper .swiper-slide img {
 }
 main .GALLERY a {
   margin-top: 1.875rem;
+}
+main .modalNotPage {
+  position: fixed;
+  padding: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  border: 1px solid #fff;
+  z-index: 99;
+}
+main .modalNotPage button {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+main .modalNotPage img {
+  max-width: 4rem;
+  width: 100%;
+}
+main .modalNotPage p {
+  color: #5cffc0;
+  font-size: 1.75rem;
+  font-weight: 600;
+  padding-top: 2rem;
 }
 
 /* main 종료 */

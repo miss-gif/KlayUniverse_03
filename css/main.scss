@@ -110,6 +110,7 @@ header {
 
 /* header 종료 */
 
+/* aside 시작 */
 aside {
   position: fixed;
   top: 140px;
@@ -146,7 +147,7 @@ aside {
             background-image: url(../img/aside/icon01_hover.png);
 
             &::after {
-              content: 'ConnectWallet';
+              content: "ConnectWallet";
               position: absolute;
               top: 50%;
               right: 70px;
@@ -160,6 +161,7 @@ aside {
               box-sizing: border-box;
               white-space: nowrap;
             }
+
             &::before {
               content: "";
               position: absolute;
@@ -189,7 +191,7 @@ aside {
             background-image: url(../img/aside/icon02_hover.png);
 
             &::after {
-              content: 'Connect Whitepaper';
+              content: "Connect Whitepaper";
               position: absolute;
               top: 50%;
               right: 70px;
@@ -203,6 +205,7 @@ aside {
               box-sizing: border-box;
               white-space: nowrap;
             }
+
             &::before {
               content: "";
               position: absolute;
@@ -217,6 +220,7 @@ aside {
           }
         }
       }
+
       &:nth-child(3) {
         a {
           position: relative;
@@ -231,7 +235,7 @@ aside {
             background-image: url(../img/aside/icon03_hover.png);
 
             &::after {
-              content: 'UNIVERSE Search';
+              content: "UNIVERSE Search";
               position: absolute;
               top: 50%;
               right: 70px;
@@ -245,6 +249,7 @@ aside {
               box-sizing: border-box;
               white-space: nowrap;
             }
+
             &::before {
               content: "";
               position: absolute;
@@ -262,6 +267,8 @@ aside {
     }
   }
 }
+
+/* aside 종료 */
 
 /* main 시작 */
 
@@ -406,7 +413,7 @@ main {
 
   .ROADMAP {
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: -30rem;
       left: 0px;
@@ -432,8 +439,7 @@ main {
         .tabMenu {
           min-width: 7.875rem;
           border-radius: 1rem 0 0 1rem;
-          background-color: #0E0F0F;
-
+          background-color: #0e0f0f;
 
           li {
             position: relative;
@@ -624,6 +630,44 @@ main {
   }
 
   /* section COMMUNITY 종료 */
+
+  /* modalNotPage 시작 */
+
+  .modalNotPage {
+    position: fixed;
+    padding: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    border: 1px solid #fff;
+    z-index: 99;
+
+    button {
+      background-color: transparent;
+      border: 0;
+      color: #fff;
+      cursor: pointer;
+      font-size: 2rem;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+
+    img {
+      max-width: 4rem;
+      width: 100%;
+    }
+
+    p {
+      color: #5cffc0;
+      font-size: 1.75rem;
+      font-weight: 600;
+      padding-top: 2rem;
+    }
+  }
+
+  /* modalNotPage 종료 */
 }
 
 /* main 종료 */
