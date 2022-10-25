@@ -4,6 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 html body {
+  min-width: 380px;
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -542,12 +543,14 @@ main .modalNotPage {
 }
 main .modalNotPage button {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background-color: transparent;
+  top: 0;
+  right: 0;
   color: #fff;
   cursor: pointer;
   font-size: 2rem;
+  padding: 0.8rem;
+  background-color: transparent;
+  border: 0;
 }
 main .modalNotPage p {
   color: #5cffc0;
