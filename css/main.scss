@@ -3,11 +3,12 @@ html {
   scroll-behavior: smooth;
 
   body {
+    min-width: 380px;
     font-family: "Lato", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     background-color: #101010;
-    background-color: orange;
+    // background-color: #000;
     color: #fff;
     cursor: url(../img/cursor.svg), auto;
 
@@ -29,6 +30,7 @@ html {
     }
 
     .row {
+      box-sizing: border-box;
       padding: 0 2rem;
     }
 
@@ -52,6 +54,7 @@ html {
       background-color: transparent;
       border: 1px solid #fff;
       transition: 0.3s;
+      text-align: center;
       box-sizing: border-box;
       display: flex;
       justify-content: center;
