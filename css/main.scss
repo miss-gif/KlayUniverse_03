@@ -440,7 +440,8 @@ main {
         .tabMenu {
           min-width: 7.875rem;
           border-radius: 1rem 0 0 1rem;
-          background-color: #0e0f0f;
+          background-color: #191919;
+          // background-color: #000;
 
           li {
             position: relative;
@@ -469,7 +470,7 @@ main {
           width: 100%;
           min-height: 32.5rem;
           padding: 3rem;
-          background-color: #000;
+          background-color: #101010;
           border-radius: 0 1rem 1rem 0;
           box-sizing: border-box;
 
@@ -586,7 +587,7 @@ main {
           div {
             min-height: 7rem;
             border-radius: 1rem;
-            background-color: #161616;
+            background-color: #191919;
           }
         }
       }
