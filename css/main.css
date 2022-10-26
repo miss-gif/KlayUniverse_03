@@ -4,11 +4,11 @@ html {
   scroll-behavior: smooth;
 }
 html body {
-  min-width: 380px;
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   background-color: #101010;
+  background-color: orange;
   color: #fff;
   cursor: url(../img/cursor.svg), auto;
 }
@@ -26,7 +26,6 @@ html body .inner {
   margin: 0 auto;
 }
 html body .row {
-  box-sizing: border-box;
   padding: 0 2rem;
 }
 html body .active {
@@ -47,7 +46,6 @@ html body .btnStyle {
   background-color: transparent;
   border: 1px solid #fff;
   transition: 0.3s;
-  text-align: center;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
